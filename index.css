@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,400&display=swap');
+
+body{
+    margin:0px;
+    
+    font-family: 'Poppins', sans-serif;
+}
+#main-container{
+    height:100vh;
+    width:100%;
+    display:flex;
+
+}
+
+
+.side-bar{
+    width:290px;
+    height:100vh;
+    background-color:#F7F0E8;
+    padding:38px;
+    box-sizing: border-box;
+    position:fixed;
+    top:0;
+    left:0;
+}
+
+.menu-items{
+    color:#466E67;
+    margin:8px;
+}
+.menu-items i{
+    margin-right:16px;
+
+}
+.filter-section{
+    margin-top: 50px;
+
+}
+.filter-items{
+    color:#466E67;
+    margin:8px;
+}
+.active-filter{
+    color:red;
+}
+.filter-items i{
+    margin-right: 16px;
+}
+.active-filter-secondary{
+    color:green;
+}
+#btn-add-task{
+    background-color:#FF5F46;
+    font-size:10px;
+    border:0;
+    color:white;
+    padding:10px;
+    border-top-right-radius:6px;
+    border-bottom-right-radius:6px;
+    border-bottom-left-radius:6px;
+    margin-top:5px;
+    margin-left: 10px;
+    box-shadow: 2px 2px 6px #666;
+}
+
+.task-section{
+    width:calc(100% - 290px - 30% );
+    height:100vh;
+    background-color:  #163232;
+   
+    box-sizing: border-box;
+    margin-left:290px;
+}
+.task-section > h1{
+    margin:0px;
+    color:white;
+    padding: 15px 48px;
+}
+#task-tab-wrapper{
+    display:flex;
+    color:#87A6A4;
+    justify-content: space-between;
+
+    border-bottom: 2px solid#345352 ;
+}
+.meeting-section{
+    width:30%;
+    height:200vh;
+    background-color:#FFF9FC;
+    padding:38px;
+    box-sizing: border-box;
+}
+.tab-task{
+    width:25%;
+    font-size:18px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    cursor:pointer;
+    text-align:center;
+}
+
+
+.tab-task.active{
+    color:#A44E46;
+    border-bottom: 2.5px solid#A44E46;
+    
+}
+.tab-badge{
+    background-color: #29514B;
+    color:#87A6A4;
+    font-size: 14px;
+    padding:4px 16px;
+    border-radius: 10px;
+    font-weight:600;
+    margin-right: 8px;
+    
+}
+.meeting-section > h1{
+    margin:0px;
+    color:#879190;
+
+}
+#user-info-wrapper{
+    display: flex;
+    justify-content:flex-end;
+
+}
+#user-info-wrapper i{
+    color:#183921;
+    font-size: 25px;
+    align-items:center;
+    margin-top:8px;
+}
+#notif-count{
+    width:50px;
+    height:40px;
+    background-color:#EEA688;
+    padding:5px;
+    box-sizing: border-box;
+    text-align:center;
+    border-radius: 10px;
+    font-weight:500;
+    font-size: 20px;
+
+    margin-left:24px;
+    
+    box-shadow: 2px 2px 4px #999;
+    color:black;
+        
+}
+.meeting-card{
+    padding:20px 20px;
+    box-sizing:border-box;
+    margin-top: 20px;
+
+
+    background-color: #FFF1DB;
+    border-radius: 16px;
+}
+.meeting-card:nth-child(4n+0){
+    background-color:#D1E4FF;
+}
+.meeting-card:nth-child(4n+1){
+    background-color:lightgreen;
+}
+.meeting-card:nth-child(4n+2){
+    background-color:lightyellow;
+}
+.meeting-card:nth-child(4n+3){
+    background-color:lightgoldenrodyellow;
+}
+.meeting-card:nth-child(4n+2){
+    background-color:lightcoral;
+}
+.user-avatar{
+    height:50px;
+    weight:50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.meeting-timing{
+    font-size: 12px;
+    margin:0px;
+    color:#918066;
+}
+.meeting-title{
+    font-size: 16px;
+    margin:0px;
+    color:#918066;
+    font-weight: 400;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+#todo-list{
+    padding:48px;
+}
+.todo-items{
+    display:flex; 
+    color:#4F7870;
+    align-items:center;
+    justify-content: space-between;
+}
+.todo-items > div{
+    display:flex;
+    align-items: center;
+}
+.todo-items i{
+    color:whitesmoke;
+    padding:6px;
+    background-color:rgb(231, 56, 25);
+    font-size:10px;
+    border-radius:5px;
+    margin-right: 16px;
+}
+.todo-message{
+    font-weight: 500;
+    font-size: 16px;
+}
+.todo-label{
+    width:150px;
+    background-color: #00AF6A;
+    color:whitesmoke;
+    padding:12px 22px;
+    border:none;
+    border-radius: 30px;
+    outline:none;
+
+}
+.todo-label.approved {
+    background-color: #00AF6A;
+
+}
+.todo-label.inprogress {
+    color:#ee1d0a;
+    background-color:#5E363B;
+
+}
